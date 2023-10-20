@@ -1,3 +1,9 @@
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
 .topnav {
 	overflow: hidden;
 	background-color: #000000;
@@ -5,7 +11,7 @@
   
   .topnav a {
 	float: left;
-	color: #000000;
+	color: #ffffff;
 	text-align: center;
 	padding: 2.5rem 2rem;
 	text-decoration: none;
@@ -31,3 +37,15 @@
   }
 
 
+  section {
+	text-align: center;
+	margin-top: 1.5rem;
+    min-width: 22.5rem;
+    width:45%;
+	background-color: #000000;
+    color: white;
+    float: none;
+}
+section, aside, nav, footer {
+    padding: .5rem;
+  }
